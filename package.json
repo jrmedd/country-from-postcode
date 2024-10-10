@@ -1,0 +1,47 @@
+{
+  "name": "country-from-postcode",
+  "version": "1.0.0",
+  "description": "Get British country from postcode (mostly accurately)",
+  "main": "./lib/countryFromPostcode.cjs",
+  "module": "./lib/countryFromPostcode.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/countryFromPostcode.d.ts",
+        "default": "./lib/countryFromPostcode.js"
+      },
+      "require": {
+        "types": "./lib/countryFromPostcode.d.cts",
+        "default": "./lib/countryFromPostcode.cjs"
+      }
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsup src/countryFromPostcode.ts --clean --dts --out-dir lib/ --format cjs,esm && fix-tsup-cjs --cwd lib",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrmedd/country-from-postcode.git"
+  },
+  "keywords": [],
+  "author": "jrmedd",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/jrmedd/country-from-postcode/issues"
+  },
+  "homepage": "https://github.com/jrmedd/country-from-postcode#readme",
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "chai": "^5.1.1",
+    "fix-tsup-cjs": "^1.2.0",
+    "mocha": "^10.7.3",
+    "prettier": "3.3.3",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2"
+  }
+}
