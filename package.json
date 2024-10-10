@@ -1,6 +1,6 @@
 {
   "name": "country-from-postcode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get British country from postcode (mostly accurately)",
   "main": "./lib/countryFromPostcode.cjs",
   "module": "./lib/countryFromPostcode.js",
@@ -28,7 +28,20 @@
     "type": "git",
     "url": "git+https://github.com/jrmedd/country-from-postcode.git"
   },
-  "keywords": [],
+  "keywords": [
+    "uk",
+    "postcode",
+    "country",
+    "england",
+    "scotland",
+    "wales",
+    "northern ireland",
+    "channel islands",
+    "isle of man",
+    "location",
+    "address",
+    "geolocation"
+  ],
   "author": "jrmedd",
   "license": "WTFPL",
   "bugs": {
